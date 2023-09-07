@@ -1,0 +1,182 @@
+/* styling for home page */
+.section{
+  height: 100%;
+width: 100%;
+background-image:linear-gradient(rgba(59, 59, 59, 0.4),rgba(94, 94, 94, 0.4)),url(shopping.jpg);
+background-position: right;
+background-size:contain;
+position:absolute;
+}
+
+.first{
+  padding-top: 80px;
+  padding-left: 70px;
+  color: #ffad06;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p1{
+  font-style: italic ;
+  color: whitesmoke;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 70px;
+}
+
+.p2{
+  color: #ececeb;
+  padding-left: 70px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  padding-bottom: 20px;
+}
+
+
+.button{
+  background-color: black;
+  color:#fff;
+  border: none;
+  margin-left: 210px;
+  padding-bottom: 8px ;
+    padding-top: 8px;
+    padding: 15px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+
+/* header and nav bar styling */
+header{
+    display: flex;
+    justify-content:center;
+    position:fi xed;
+    background-color: white;
+    
+}
+
+.ownnav ul{
+    list-style: none;
+    font-weight: bold;
+    padding-left: 70px;
+    
+}
+
+.ownnav   li{
+    display: inline;
+    padding: 70px;
+    
+}
+.ownnav li a{
+    
+    text-decoration: none;
+    color: black;
+    padding-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.3s;
+}
+
+.logo{
+   height: 45px; 
+   padding-top: 4px;
+   
+}
+
+.ownnav a:hover{
+    color:  grey;
+}
+
+.account{
+    padding-top: 19px;
+    font-size: 13px;
+    padding-left: 80px;
+    color: rgb(22, 21, 21);  
+    
+}
+
+.down{
+    font-size: 20px;
+    
+}
+
+.fa-solid:hover{
+color: grey ;
+}
+
+.cart{
+    padding-top: 26px;
+    font-size: 13px;
+    padding-left: 45px;
+    color: rgb(17, 17, 17);
+}
+
+
+
+/* CSS for the shopping cart page */
+
+body {
+    font-family: sans-serif;
+    
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+     text-align: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin : auto ;
+    border: none;
+}
+
+#cart input{
+ border: none;
+ background-color: rgb(255, 255, 255);
+}
+
+.total{
+  font-size:large;
+}
+
+#cart button{
+border: none;
+background-color: black;
+color: #fafafa;
+font-weight:bolder;
+padding: 7px;
+border-radius: 7px;
+
+}
+  
+  
+  .cart-item img {
+    width: 100px;
+    height: 90%;
+    
+  }
+
+  #total-price{
+    padding-left: 167px;
+  }
+  
+ .button2{
+  background-color: black;
+color: #fafafa;
+font-weight:bolder;
+border-radius: 8px;
+margin-left: 600px;
+padding-bottom: 8px ;
+padding-top: 8px;
+ }

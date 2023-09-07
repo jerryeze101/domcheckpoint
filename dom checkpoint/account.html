@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./account.css"/>
+    <title> ACCOUNTS</title>
+</head>
+<body>
+    <!-- login and sign up form -->
+    <div class="hero">
+        <div class="formbox">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">LOG IN</button>
+                <button type="button" class="toggle-btn" onclick="signup()">SIGN UP</button>
+                 </div>
+                 <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="Password" required>
+                     <input type="checkbox" class="check-box"><span>Remember Password</span>
+                     <button type="submit" class="Submit-btn">LOG IN </button>
+                 </form>
+
+                 <form id="signup" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="email" class="input-field" placeholder="email Id" required>
+                    <input type="text" class="input-field" placeholder="Password" required>
+                     <input type="checkbox" class="check-box"><span> I agree to the terms & conditios</span>
+                     <button type="submit" class="Submit-btn">SIGN UP </button>
+                 </form>
+
+         </div>
+    </div>
+<!-- javascript code for the log in and sign up page -->
+<script>
+   var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+
+        function signup(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+            }
+</script>
+</body>
+</html>

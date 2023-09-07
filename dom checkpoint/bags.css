@@ -1,0 +1,144 @@
+
+
+/* styling for the h1 element */
+.bags{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+/* styling for the cards */
+.container{
+    gap: 30px;
+    flex-wrap: wrap;
+    display: inline-flex;
+    padding-top: 100px;
+    padding-left: 140px;
+    padding-right: 30px;
+    
+}
+
+.add-to-cart {
+    margin-inline: 70px;
+    border: none;
+    font-weight: bolder;
+    border-radius: 7px;
+    background-color: black;
+    color: #fafafa;
+}
+ 
+
+
+.card-body{
+width: 299px;
+height: 170px;
+}
+
+.card-img-top1{
+    width: 299px;
+}
+
+.card-img-top2{
+    width: 299px;
+}
+
+.card-img-top3{
+    width: 299px;
+}
+
+
+.card-img-top4{
+    width: 299px;
+}
+
+ /* syling for the clickable heart shaped button */
+
+.heart-container {
+  --heart-color: purple;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  transition: .3s;
+}
+
+.heart-container .checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container .svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container .svg-outline,
+        .heart-container .svg-filled {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container .svg-filled {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container .svg-celebrate {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-filled {
+  display: block
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-celebrate {
+  display: block
+}
+
+@keyframes keyframes-svg-filled {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
